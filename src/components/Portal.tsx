@@ -64,15 +64,16 @@ export default function Portal() {
             </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+        <div className="flex flex-wrap justify-center gap-6 w-full">
           {activeProjects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              title={dict.projects[project.id].name}
-              description={dict.projects[project.id].description}
-              visitText={dict.common.visitProject}
-            />
+            <div key={project.id} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+              <ProjectCard
+                project={project}
+                title={dict.projects[project.id].name}
+                description={dict.projects[project.id].description}
+                visitText={dict.common.visitProject}
+              />
+            </div>
           ))}
         </div>
         

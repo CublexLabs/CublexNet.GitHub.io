@@ -20,7 +20,7 @@ export const projects: Project[] = [
     id: 'server-tr',
     url: 'https://mctr.cublex.net',
     iconName: 'Sword',
-    enabled: true,
+    enabled: false,
     color: 'from-red-500 to-orange-500',
     gradient: 'hover:shadow-[0_0_40px_-10px_rgba(239,68,68,0.5)]',
   },
